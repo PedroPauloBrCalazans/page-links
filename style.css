@@ -100,6 +100,16 @@ ul li a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
 /* 
  - ShotRender ou atalho quando agrupamos varias propriedades CSS em um unica propriedade
  - Regra de display:
