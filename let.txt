@@ -1,0 +1,16 @@
+- ShotRender ou atalho quando agrupamos varias propriedades CSS em um unica propriedade
+ - Regra de display:
+  ** DIV é um elemento BLOCK, IMG elemento INLINE em elemento INLINE não consigo aplicar margin: auto
+    - none = nenhum
+    - block = pega o elemento e vai dar toda largura possivel do elemento de tela, forçando que o proximo elemento fica a baixo dele 
+    - inline = em linha, cada elemento fica na mesma linha
+    ** Em elemento pai, ele aceita que o text-aling seja centralizado 
+
+
+    https://ionic.io/ionicons
+
+--------------------------------------- ISSO FAZ A MESMA COISA QUE ESTÁ NO BODY DO CSS -----------------------------------------------
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;

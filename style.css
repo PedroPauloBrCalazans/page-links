@@ -7,20 +7,22 @@
 :root {
   --text-color: white;
   --bg-url: url("./assets/bg-mobile.jpg");
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --text-color: black;
   --bg-url: url("./assets/bg-mobile-light.jpg");
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
   background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -52,7 +54,6 @@ body * {
 }
 
 /*List*/
-
 ul {
   list-style: none;
 
@@ -70,8 +71,8 @@ ul li a {
 
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -84,7 +85,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
@@ -107,7 +108,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
 
 footer {
@@ -119,16 +120,3 @@ footer {
 footer a {
   text-decoration: none;
 }
-
-/* 
- - ShotRender ou atalho quando agrupamos varias propriedades CSS em um unica propriedade
- - Regra de display:
-  ** DIV é um elemento BLOCK, IMG elemento INLINE em elemento INLINE não consigo aplicar margin: auto
-    - none = nenhum
-    - block = pega o elemento e vai dar toda largura possivel do elemento de tela, forçando que o proximo elemento fica a baixo dele 
-    - inline = em linha, cada elemento fica na mesma linha
-    ** Em elemento pai, ele aceita que o text-aling seja centralizado 
-
-
-    https://ionic.io/ionicons
-*/
